@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function page() {
-  return <div>account</div>;
+  return (
+    <h2 className="font-semibold text-2xl text-accent-400 mb-7">
+      Welcome, Eslam
+    </h2>
+  );
 }
