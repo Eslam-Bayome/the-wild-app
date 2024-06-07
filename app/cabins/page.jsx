@@ -1,4 +1,7 @@
+import { Suspense } from "react";
+import CabinList from "../_components/CabinList";
 import Counter from "../_components/Counter";
+import Spinner from "../_components/Spinner";
 export const metadata = {
   title: "Cabines",
 };
@@ -6,7 +9,6 @@ export const metadata = {
 
 export default function Page() {
   // CHANGE
-  const cabins = [];
 
   return (
     <div>
@@ -21,14 +23,9 @@ export default function Page() {
         away from home. The perfect spot for a peaceful, calm vacation. Welcome
         to paradise.
       </p>
-
-      {cabins.length > 0 && (
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14">
-          {cabins.map((cabin) => (
-            <CabinCard cabin={cabin} key={cabin.id} />
-          ))}
-        </div>
-      )}
+      <Suspense fallback={<Spinner />}>
+        <CabinList />
+      </Suspense>
     </div>
   );
 }
