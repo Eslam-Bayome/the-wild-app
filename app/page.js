@@ -7,9 +7,9 @@ export default function Page() {
       <Image
         src={pg}
         fill
-        className="object-cover objecto-top"
+        className="object-cover object-top"
         priority
-        placeholder="blur" // it made the img blured until the img download
+        placeholder="blur" // it made the img blured until the img dsownload
         alt="Mountains and forests with two cabins"
       />
 

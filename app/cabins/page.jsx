@@ -2,11 +2,13 @@ import { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Counter from "../_components/Counter";
 import Spinner from "../_components/Spinner";
+
+export const revalidate = 3600;
+
 export const metadata = {
   title: "Cabines",
 };
 // import CabinCard from "@/app/_components/CabinCard";
-
 export default function Page() {
   // CHANGE
 
