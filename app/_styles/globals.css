@@ -29,9 +29,30 @@
   }
 }
 
-For data picker .rdp {
+/* For data picker */
+
+.rdp {
   --rdp-cell-size: 32px !important;
   --rdp-accent-color: theme("colors.accent.500") !important;
   --rdp-background-color: theme("colors.accent.600") !important;
   margin: 0 !important;
+}
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .rdp {
+    --rdp-cell-size: 24px !important;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .rdp {
+    --rdp-cell-size: 30px !important;
+  }
+  .custom-day-picker .rdp-months {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }

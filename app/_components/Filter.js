@@ -16,8 +16,10 @@ export const Filter = () => {
     // we set in the url search param  something called capacity with the value of filter but it
     // it change it intenally only it dosnt navigate to it we need a replace fn called router
     params.set("capacity", filter);
+
     router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   }
+
   return (
     <div className="border border-primary-800 flex">
       <Button
