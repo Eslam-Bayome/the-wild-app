@@ -34,21 +34,21 @@ export const Filter = () => {
         handleFilter={handleFilter}
         activeFilter={activeFilter}
       >
-        1&mdash;4 guests
+        1&mdash;3 guests
       </Button>
       <Button
         filter={"medium"}
         handleFilter={handleFilter}
         activeFilter={activeFilter}
       >
-        5&mdash;7 guests
+        4&mdash;6 guests
       </Button>
       <Button
         filter={"large"}
         handleFilter={handleFilter}
         activeFilter={activeFilter}
       >
-        8&mdash;12 guests
+        7&mdash;12 guests
       </Button>
     </div>
   );
