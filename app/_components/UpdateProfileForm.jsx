@@ -1,13 +1,9 @@
 "use client";
-import React from "react";
-import { updateProfileAction } from "../_lib/actions";
 import Image from "next/image";
-import { useFormStatus } from "react-dom";
-import { Allerta } from "next/font/google";
+import { updateProfileAction } from "../_lib/actions";
 import { FormButtonLoader } from "./FormButtonLoader";
-export const UpdateProfileForm = ({ guest, children }) => {
-  // const [Counter, setCounter] = useState();
 
+export const UpdateProfileForm = ({ guest, children }) => {
   return (
     <form
       className="bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col"
